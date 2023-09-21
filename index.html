@@ -1,0 +1,356 @@
+<!DOCTYPE htm>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- HTML Meta Tags -->
+    <title>SeedTree</title>
+    <meta name="description" content="" />
+
+    <!-- <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css"> -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="assets/vendors/slick/slick-theme.css" />
+    -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+    <!-- <link rel="stylesheet" href="assets/vendors/slick/slick.css" /> -->
+    <!-- <link rel="stylesheet" href="assets/vendors/lity/css/lity.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.css"
+      integrity="sha512-NDcw4w5Uk5nra1mdgmYYbghnm2azNRbxeI63fd3Zw72aYzFYdBGgODILLl1tHZezbC8Kep/Ep/civILr5nd1Qw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <!-- <link rel="stylesheet" href="assets/fonts/fonts.css" /> -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+
+    <style>
+      .meeting_vd img {
+        width: 100%;
+      }
+
+      .meeting_vd {
+        margin-bottom: 30px;
+      }
+
+      .sch_m_left p {
+        color: #516770;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+
+      .pConsultation_check {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .pConsultation_check .title {
+        color: #2d3639;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+      }
+
+      .pConsultation_check a {
+        font-weight: 600;
+        color: #516770;
+        font-size: 14px;
+      }
+
+      .pConsultation_check a img {
+        margin-right: 5px;
+      }
+
+      .pConsultation_check .head {
+        margin-bottom: 20px;
+      }
+
+      .pConsultation_check label {
+        text-align: center;
+        background: transparent;
+        border-radius: 40px;
+        display: inline-block !important;
+        border: 1px solid #919ca1 !important;
+        padding: 9px 9px !important;
+        font-size: 14px;
+        color: #516770 !important;
+        line-height: normal;
+        cursor: pointer;
+      }
+
+      .pConsultation_check input[type="radio"]:checked + label {
+        background: #166b8e;
+        border: 1px solid #166b8e !important;
+        color: #fff !important;
+      }
+
+      .pConsultation_check input {
+        display: none;
+      }
+
+      .pConsultation_check li {
+        display: inline-block;
+        margin: 5px;
+        margin-left: 0px;
+      }
+
+      .pConsultation_check .action {
+        padding-top: 20px;
+        margin-top: 20px;
+        border-top: 1px solid #f4f9fb;
+      }
+
+      .pConsultation_check .price {
+        color: #2d3639;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+      }
+
+      .pConsultation_check .action a {
+        margin: 0;
+        color: #fff;
+      }
+
+      .group_btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 40px;
+      }
+
+      .group_btn .cta-btn {
+        justify-content: center;
+        padding: 20px;
+        border-radius: 30px;
+        border: 1px solid #166b8e;
+      }
+
+      .btn_border {
+        border: 1px solid #166b8e;
+        color: #166b8e;
+      }
+
+      .btn_border:hover {
+        background: #166b8e;
+        color: #fff;
+      }
+
+      .t_date {
+        position: relative;
+        cursor: pointer;
+        width: 110px;
+      }
+
+      .t_date input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 1;
+        width: 100%;
+        cursor: pointer;
+        z-index: 11;
+        background: border-box;
+        border: none;
+        background: transparent;
+        padding-left: 29px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #516770;
+        font-size: 14px;
+      }
+
+      @media (max-width: 575px) {
+        .sm_hd h3 {
+          font-size: 22px;
+        }
+
+        .sm_hd p {
+          color: #919ca1;
+          font-size: 14px;
+        }
+
+        .pConsultation_check {
+          padding: 0;
+          margin: 30px 0;
+        }
+
+        .group_btn {
+          display: block;
+          text-align: center;
+        }
+
+        .group_btn {
+          display: flex;
+          text-align: center;
+          flex-direction: column-reverse;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="contact-page">
+    <!-- ======== MAIN WRAPPER START ======= -->
+    <div class="main-wrapper">
+      <!-- Selection Start -->
+      <section class="selection-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="sitelogo-center text-center">
+                <a href="/">
+                  <img src="assets/img/logo.webp" alt="logo" />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-9 mx-auto">
+              <div class="selection-main-box">
+                <div class="heading sm_hd">
+                  <div class="row align-items-center">
+                    <div class="col-sm-12">
+                      <div class="text-sm-start text-center">
+                        <h3 class="mb-2">Schedule meeting with Seedtree</h3>
+                        <p>
+                          Please select available time to schedule the meeting.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="sch_m_left">
+                        <div class="meeting_vd">
+                          <img src="assets/img/sm.png" alt="img" />
+                        </div>
+                        <p>
+                          Please ensure that there is no noise in background &
+                          your machine’s camera is working properly.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <form>
+                        <div class="pConsultation_check">
+                          <div
+                            class="head d-flex align-items-center justify-content-between"
+                          >
+                            <span class="title d-block">Availability</span>
+                            <div class="t_date">
+                              <!-- <a
+                                href="javascript:;"
+                                class="d-flex align-items-center"
+                                ><img src="assets/img/calendar.svg" alt="icon"
+                              /></a> -->
+                              <input
+                                type="text"
+                                id="datepicker"
+                                autocomplete="off"
+                                placeholder="Today"
+                                class="d-block"
+                                onchange="fun()"
+                              />
+                            </div>
+                          </div>
+                          <ul id="currentDateContainer">
+                            <li>
+                              <input type="radio" name="time" id="ch1" />
+                              <label for="ch1">02:00 pm</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="time" id="ch2" />
+                              <label for="ch2">06:00 pm</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="time" id="ch3" />
+                              <label for="ch3">07:00 pm</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="time" id="ch4" />
+                              <label for="ch4">08:00 pm</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="time" id="ch5" />
+                              <label for="ch5">09:00 pm</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="time" id="ch6" />
+                              <label for="ch6">10:00 pm</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="group_btn">
+                          <a href="javascript:;" class="cta-btn btn_border"
+                            >Change Subscription</a
+                          >
+                          <a href="javascript:;" class="cta-btn btn_default"
+                            >Continue<svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="22"
+                              height="12"
+                              viewBox="0 0 22 12"
+                              fill="none"
+                            >
+                              <path
+                                d="M21.0303 6.53033C21.3232 6.23744 21.3232 5.76256 21.0303 5.46967L16.2574 0.696699C15.9645 0.403806 15.4896 0.403806 15.1967 0.696699C14.9038 0.989593 14.9038 1.46447 15.1967 1.75736L19.4393 6L15.1967 10.2426C14.9038 10.5355 14.9038 11.0104 15.1967 11.3033C15.4896 11.5962 15.9645 11.5962 16.2574 11.3033L21.0303 6.53033ZM0.5 6.75H20.5V5.25H0.5V6.75Z"
+                                fill="white"
+                              /></svg
+                          ></a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="selection-page-action text-center">
+                <a href="/">Go to Home</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Selection End -->
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="assets/vendors/jquery/jquery.min.js"></script> -->
+    <!-- <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.0.0/lity.min.css"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
